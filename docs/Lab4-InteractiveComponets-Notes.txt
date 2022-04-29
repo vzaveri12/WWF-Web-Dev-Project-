@@ -1,0 +1,215 @@
+Lab4 Interactive Components  - v5.0 - 10.20.19
+
+------------------------------------------------------------------
+1.0  Getting Started
+------------------------------------------------------------------
+
+This project provides examples of how to use the bootstrap interactive components.
+
+
+    css/style.css - the css for this project; both .html files require this
+    
+    js/extensions.js - the js for all our extensions; both .html files require this
+
+    interacticeComponents.html - a starter template
+
+    snippets.html - code snippets of the various interactice components
+
+
+------------------------------------------------------------------
+2.0  Resources
+------------------------------------------------------------------
+
+
+2.1  BS Resources
+------------------------------------------------------------------
+
+    - http://getbootstrap.com/
+    - https://www.w3schools.com/bootstrap4/
+
+2.2 BS Interactive Components
+------------------------------------------------------------------
+
+BS Interactive Components
+
+    Navigation Bar - https://getbootstrap.com/docs/4.3/components/navbar/
+                   
+    Carousel       - https://getbootstrap.com/docs/4.3/components/carousel/
+    
+    Tabs           - https://getbootstrap.com/docs/4.3/components/navs/#tabs
+                     
+    Collapse       - https://getbootstrap.com/docs/4.3/components/collapse/
+                     
+    Modal          - https://getbootstrap.com/docs/4.3/components/modal/
+                     
+    Cards          - https://getbootstrap.com/docs/4.3/components/card/
+                     
+    Tool Tip       - https://getbootstrap.com/docs/4.3/components/tooltips/
+                     
+    Pop-Over       - https://getbootstrap.com/docs/4.3/components/popovers/
+                     
+    Forms          - https://getbootstrap.com/docs/4.3/components/forms/
+    
+    Tables         - https://getbootstrap.com/docs/4.3/content/tables/
+    
+    
+2.3 Place Holder Content
+------------------------------------------------------------------
+
+Text     
+        - http://meettheipsums.com/
+
+Images     
+
+        - https://placeimg.com/
+        - https://picsum.photos/
+
+2.4 Fonts 
+------------------------------------------------------------------
+
+    - https://fonts.google.com/
+
+
+2.5 Colors
+------------------------------------------------------------------
+
+    - https://coolors.co/
+
+
+2.6  CSS Refresher
+------------------------------------------------------------------
+
+    General Reference - https://www.w3schools.com/cssref/default.asp
+
+    Syntax - https://www.w3schools.com/css/css_syntax.asp
+    Box Model - https://www.w3schools.com/css/css_boxmodel.asp
+    Text Properties - https://www.w3schools.com/css/css_text.asp
+    Link Properties - https://www.w3schools.com/css/css_link.asp
+
+------------------------------------------------------------------
+3.0 Lab4-InteractiveComponents
+------------------------------------------------------------------
+
+Lab 4  – Interactive Components
+
+Assignment:
+
+In this lab you will build a one-page, multi-section, scrolling site using the bootstrap framework's interactive components; and robustly populate these interactive components with placeholder text and placeholder digital assets (images, video, audio, embeds) [or your own content as long as it is very robust] to produce a clean and well-organized website.
+
+Parts:
+
+Your site MUST contain ALL of the following:
+
+
+(1) Use the Grid System to layout all the sections and the interactive components content of your site
+
+grid system ::  section->container->row->col
+
+
+(2) ALL of these Interactive Components:
+
+- Navigation to access each section of the page or other pages 
+(https://getbootstrap.com/docs/4.3/components/navbar/)
+
+- Carousel with images and captions
+(https://getbootstrap.com/docs/4.3/components/carousel/)
+
+- Cards with robustly formatted content
+(https://getbootstrap.com/docs/4.3/components/card/)
+
+- Tabs with robustly formatted content
+(https://getbootstrap.com/docs/4.3/components/navs/#tabs)
+
+- Accordion with robustly formatted content
+(https://getbootstrap.com/docs/4.3/components/collapse/)
+
+- Modal with robustly formatted content
+(https://getbootstrap.com/docs/4.3/components/modal/)
+
+
+(3) Robustly Formatted Content:
+
+Robustly formatted content refers to content that is more than just simple text.  Use text and digital assets (images, video) in combination; and use the grid system for side-by-side content.
+
+And within this content include examples of:
+
+- Table(s) 
+(https://getbootstrap.com/docs/4.3/content/tables/)
+
+- Form(s) 
+(https://getbootstrap.com/docs/4.3/components/forms/)
+
+- ToolTips 
+(https://getbootstrap.com/docs/4.3/components/tooltips/)
+
+- Popovers 
+(https://getbootstrap.com/docs/4.3/components/popovers/)
+
+
+(4) Use Bootstrap Helper Classes for:
+
+- Text layout helper classes 
+(https://getbootstrap.com/docs/4.3/utilities/text/)
+
+- Image layout helper classes 
+(https://getbootstrap.com/docs/4.3/content/images/)
+
+- Contextual color's helper classes (https://getbootstrap.com/docs/4.3/utilities/colors/)
+
+Truly think about what visual style and layout designs will complement your site. Be creative. Push yourself to produce a visually appealing, clean, and integrated layout with all needed details for formatting this project.
+
+This lab is worth 40 points.
+
+Getting Started:
+
+Download the Lab4-Interactive project from the Resources section of our Sakai site.
+
+In the project there is an snippets.html page with lots and lots of code snippets for how to start to use these interactive components.  Also in this project is a Lab5-Interactive.html page that has a simple starter code that you can use to build you site.  Both of these html files require the css/style.css.
+
+Submission:
+
+Upload your finished project to your account on the course web server.  Be sure to test the site and confirm that all assets are available and all links work correctly.
+
+Submit a link to your project folder in Sakai. 
+
+Scoring:
+
+Asset and Code Organization (5 points) - Good organization, proper naming, location of website files and folders; Valid and functional HTML (use the code HTML validator http://validator.w3.org/); Clearly formatted and commented code.
+
+Bootstrap Grid Usage (10 Points) – Proper usage of bootstrap grid components.
+
+Bootstrap Interactive Components Usage (10 Points) – Proper usage of bootstrap interactive components for navigation, carousel, tab, accordion, card, modal, tool tip, and popover
+
+Robust Content (10 Points) - Proper and robust usage of placeholder content for text, and images within the site content include tables and forms.
+
+Reading: 
+
+- W3Schools Tutorial on required interactive elements.
+
+- Getbootstrap.com examples on required interactive elements.
+
+Resources:
+
+Getbootstrap.com Reference
+
+- http://getbootstrap.com/
+
+Font Selector
+
+- https://www.google.com/fonts
+
+Place Holder Text
+
+- http://meettheipsums.com/
+
+Place Holder Images
+
+- https://placeimg.com/
+- https://picsum.photos/
+
+
+
+   
+
+
+

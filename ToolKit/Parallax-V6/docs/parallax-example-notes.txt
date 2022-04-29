@@ -1,0 +1,357 @@
+Parallax Example - v 6.2 - 11.20.19
+
+------------------------------------------------------------------
+1.0  Getting Started
+------------------------------------------------------------------
+
+This project provides an example for a Parallax scrolling single pager.
+
+The primary components are:
+
+        parallax-example.html
+        ./css/parallax-example.css
+        ./images - for the images used for the backgrounds in each section
+
+This project REQUIRES the Responsive Extra's extensions:
+    
+        ./css/extensions.css
+        ./js/extensions.js
+        
+You MUST use both of these in your project.  See Section 1.1 HOW TO USE for instructions. 
+
+This project also uses the animate.css plugin that is <link>'ed from a CDN
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Animate.css Plug-in -->
+    <!-- https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        
+See https://daneden.github.io/animate.css/ for examples
+    
+These files are REQUIRED if you want to use these optional features.
+
+1.1  HOW TO USE 
+------------------------------------------------------------------
+
+To use any of these extensions in the ToolKit you must use these files:
+    
+        ./css/extensions.css
+        ./js/extensions.js
+        
+Step 1 - Be sure to copy BOTH of these files into their respective folders in your project
+
+    (a) add the ./css/extensions.css to your projects ./css folder
+    
+    (b) add the ./js/extensions.js to your projects ./js folder
+
+Step 2 - Be sure to include BOTH of these files in EACH html page in your project
+
+    (a) link in the ./css/extensions.css in EACH of your html pages in the <head> section
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <link rel="stylesheet" href="css/extensions.css">
+
+    (b) Add this the bottom of your <body> section
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <script src="js/extensions.js"></script>
+
+------------------------------------------------------------------
+2.0  Parallax Scrolling Intro
+------------------------------------------------------------------
+
+Parallax scrolling is a web site TREND* where the background content, in our case most likely an image, is moved at a different speed than the foreground content while scrolling. 
+
+    * Note: Parallax scrolling does not always work well on mobile devices.
+
+We can accomplish this parallax effect by adding background images to each of the sections of our single page websites.  When we do this we often need to directly set a minimum height or ensure that our padding and content provide sufficient vertical distance to display the background image.
+
+
+2.1  Setting Up a Generic <section>
+------------------------------------------------------------------
+
+The following is a general walk through to the structure of the HTML and CSS needed to setup a single <section> of a page for the parallax scrolling effect.    
+
+    (1) Choose an image
+
+    The first things you want to do is choose an appropriate image.  The image needs to be big enough to cover the entire width of the page. And tall enough to cover the height of you your content in this <section>
+
+        width   should be > 1200px
+        height  should be >  600px
+
+    In our example we use a generic image name img_parallax.jpg that is in our projects ./images sub-folder.
+
+    (2) Setup the CSS:
+
+    The next thing we need to do is setup a CSS class that defines a background image such that it will fully occupy the space of our section.
+
+        .parallax { 
+
+            /* The image used */
+            background-image: url("../images/img_parallax.jpg");
+
+            /* Cover the whole section (page) */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Set a specific minimum height */
+            min-height: 500px; 
+        }
+
+    The tricky bit here is the usage of the min-height property.  Setting this to a fixed px value is what makes this technique less than desirable for responsive websites.
+
+    (3) Use this class .parallax in the <section> on our page
+
+        <section class="parallax">
+
+            <div class="container-fluid">
+
+                <h2>Parallax Example</h2>
+                ...
+
+            </div>
+
+        </section>
+
+
+Again this is a generic example demonstrating how to setup a class to hold the covering background image and to then use this class on your page.
+
+
+2.2  General Notes on the Parallax Scrolling Technique
+------------------------------------------------------------------
+
+Here are some key things to keep in mind when using this technique:
+
+    - Pick large high quality images
+    - Since you are using images as a bg; you often need to be careful of the text color used.  
+    - Since you are using images as a bg; you often need to use solid bg colors around the content in each section. 
+
+
+------------------------------------------------------------------
+3.0  Parallax Scrolling Multi-Section Example 
+------------------------------------------------------------------
+    
+This example has single page site has 5 distinct sections:
+
+        1 - Nav bar (no background image)
+        2 - IC section
+        3 - More IC Section
+        4 - Contact IC Section
+        5 - Footer (no background image)
+
+
+Section 1 - Nav Bar is self described.  It is a fixed Nav like those that we have been using in all our examples.  It does not have a background image associated with it.
+
+Section 5 - Footer is also self described.  It is a simple footer like those that we have been using in all our examples.  This section also does not have a background image associated with it.
+
+Sections 2-3-4 are distinct <section>'s of autonomous content.  Each of these <section>'s is intended to stand on their own and have their own distinct layout and style.  Each of these sections will have it's own background image. (Note, the content in these sections is placeholder; with the exception of the modal.)
+
+As is our practice, for sections 2-3-4 we have created ID's for each section to use to hook to the navigation (as well as other rules for each section):
+
+        #homeIC
+        #moreIC
+        #contactIC
+
+And we know we use these ID's as follows:
+
+        <section id="homeIC">
+        ...
+        </section>
+
+        <section id="moreIC">
+        ...
+        </section>
+
+        <section id="contactIC">
+        ...
+        </section>
+
+The rest of this walks through how we setup and used the background images for each of these sections.
+
+
+3.1  Selecting Our Images
+------------------------------------------------------------------
+
+For this example we used google images to select 3 images whose size was > 1200x600 of the IC campus.
+
+These images are named ic-X.jpg and are located in the projects ./images sub-folder.
+
+
+3.2  Setup the CSS
+------------------------------------------------------------------
+    
+In this example we are going to use multiple background images - specifically 3 background images; one for each of the content sections.  
+
+So for each image we create a separate class.  Using similar names that we used for the ID's.
+
+        .homeICimg
+
+        .moreICimg
+
+        .contactICimg 
+
+And to minimize the code we set up these classes in 2 sub-steps:  
+
+    (1)  Create the classes with the common rules they each will need so that the images cover the entire page:
+
+        .homeICimg, .moreICimg, .contactICimg {
+
+            position: relative;
+            opacity: 1.0;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+
+    (2)  And then add the rules that are specific to each of these classes:
+
+        .homeICimg {
+            background-image: url("../images/ic-3.jpg");
+            min-height: 800px; /* set just for this example */
+        }
+
+        .moreICimg {
+            background-image: url("../images/ic-5.jpg");
+            min-height: 800px; /* set just for this example */
+        }
+
+        .contactICimg {
+            background-image: url("../images/ic-1.jpg");
+            min-height: 800px; /* set just for this example */
+        }     
+
+
+    Note that the 800px used for the min-height property is chosen for this example to better illustrate the parallax scrolling effect.  Your usage of this property will be specific to your project.
+
+    (3)  And then use these classes in the <section> tags for each of these sections on the page.  For example:
+
+        <section id="homeIC" class="homeICimg">
+        ...
+        </section>
+
+        <section id="moreIC" class="moreICimg">
+        ...
+        </section>
+
+        <section id="contactIC" class="contactICimg">
+        ...
+        </section>
+
+
+------------------------------------------------------------------
+4.0  Using Smooth Scrolling in this Project
+------------------------------------------------------------------
+
+You will notice that there is a delayed "smooth" scrolling when you click on each of the links in the nav bar.
+
+This is an attractive feature for single page mulit-section pages.
+
+To set this up.  You have your standard nav links.  Where each <a> tag in the nav links to a #someID that links to a section in the page.  As noted above, this example uses #someID's for navigation to the top of the page as well as each of the multiple sections of the page
+
+        <body id="topPage" ...>
+
+        <section id="homeIC" ...>
+        ...
+        </section>
+
+        <section id="moreIC" ...>
+        ...
+        </section>
+
+        <section id="contactIC" ...>
+        ...
+        </section>
+
+To get the "smooth scrolling" you need to:
+
+Step 1 - include the extensions.css and extensions.js in your project and all your HTML pages as detailed above in section 1.1
+
+And then you need to add this snippet after you include the extensions.js code at the bottom of your page.
+
+So at the bottom of your page, before the closing </body> tag you have:
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <script src="js/extensions.js"></script>
+
+
+and then you need to include the following snippet:
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Smooth-Scroll Plugin JS -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#topPage"]');
+        var scroll = new SmoothScroll('a[href*="#homeIC"]');
+        var scroll = new SmoothScroll('a[href*="#moreIC"]');
+        var scroll = new SmoothScroll('a[href*="#contactIC"]');
+    </script>
+
+And be sure to change the #topPage (and the other ID's) to whatever you page section ID's are.
+
+
+------------------------------------------------------------------
+5.0  The Theme Used In This Project
+------------------------------------------------------------------
+
+For fun this theme uses the IC brand identity.
+
+    2 x fonts:
+
+        @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+        .ic-primary-font {
+            font-family: 'Crimson Text', serif;
+        }
+
+        .ic-secondary-font {
+            font-family: 'Open Sans', sans-serif;    
+        }
+
+    3 x color pairings:
+
+        .ic-blue {
+            background-color: #013158;
+            color: #FFFFFA;
+        }
+
+        .ic-gray {
+            background-color: #525052;
+            color: #FFFFFA;
+        }
+
+        //note, the .ic-gold uses rgba() top allow the gold color to be transparent
+        .ic-gold {
+            background-color: rgba(255, 183, 0, 0.8);
+            color: #013158;
+
+        }
+
+    button styling:
+
+        .btn-icBlue, .btn-icBlue:hover {
+            background-color: #013158;
+            color: #FFFFFA; 
+            border-color: transparent;
+
+        }
+
+    glyph styling:
+
+        .ic-glyphicon {
+            font-size: 2em;
+        }    
+
+
+
+
+
+
+

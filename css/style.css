@@ -1,0 +1,93 @@
+/*
+    style.css
+
+    This is the page that will have all the CSS for our project site.
+    Be sure to follow the order of the rules in this this file.
+*/
+
+
+/* ========================================================= */
+/*  IMPORTS for fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* ========================================================= */
+/*  Page Level Style Rules */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.usbtn {
+    position: absolute;
+    right: 100px;
+}
+
+/* ========================================================= */
+/* Color Rules */
+
+.bg-black {
+    background-color: black;
+}
+
+
+/* ========================================================= */
+/* Utility Text Style Rules */
+
+/* ---------------------------------------*
+/* Add spacing to text elements */
+
+.section-spacing {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+
+.text-spacing {
+    padding: 0.25em;
+}
+
+#listPadding {
+    padding: 75px 100px 100px 100px;
+}
+
+#pad {
+    padding-top: 50px;
+}
+
+.pop {
+    padding-top: 20px;
+}
+
+.rm {
+    padding-right: 200px;
+}
+
+/* ========================================================= */
+/* Extending BS Stlye Rules */
+
+/* --------------------------------------------------------- */
+/* Tabs .borders :: Add borders to tab content */
+
+.tab-content.borders {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+
+/* ========================================================= */
+/* Nav Bar BS Stlye Rules */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,250, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+

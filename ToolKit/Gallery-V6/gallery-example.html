@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- *************************************************************** -->
+<!-- HEAD Section -->
+
+<head>
+
+    <title>Gallery V6.2</title>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Font Awesome CSS -->
+    <!-- https://fontawesome.com/v4.7.0/get-started/ -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Animate.css Plug-in -->
+    <!-- https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <link rel="stylesheet" href="css/extensions.css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- My Project CSS -->
+    <link rel="stylesheet" href="css/gallery-example.css">
+</head>
+
+<!-- *************************************************************** -->
+<!-- BODY Section -->
+
+<body id="topPage" class="bg-image" data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- *************************************************************** -->
+    <!-- Responsive Navigation Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <nav class="navbar fixed-top navbar-expand-md">
+
+        <a class="navbar-brand" href="#topPage">Gallery V6.2</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hover">Hover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lbox">Lightbox</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hover-lbox">Both</a>
+                </li>
+            </ul>
+
+            <!-- social media icons -->
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://fontawesome.com/v4.7.0/get-started/" target="_blank">Font Awesome 4.7</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="docs/gallery-example-notes.txt" target="_blank">Notes</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- ^^collapse -->
+
+    </nav>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+    <!-- *************************************************************** -->
+    <!-- How To Section Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="howto">
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- How To - Title -->
+            <div class="row animated zoomIn">
+                <div class="offset-2 col-8 offset-2 text-center bg-red">
+                    <h1>#climatechange Gallery</h1>
+                    <h3>
+                        We specialize in
+                        <br>
+                        <i class="text-blue">Image Hover Effects</i>
+                        <br>
+                        and
+                        <br>
+                        <i class="text-blue">Lightbox Image Galleries</i>
+                    </h3>
+                    <br>
+
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                    <!-- How To Modal - Trigger -->
+                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#howtoModal">How To</button>
+                    <br>
+                    <br>
+                    <i class="bg-blue">*All images in this example where selected randomly from student suggestions.</i>
+                </div>
+            </div>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- How To Modal - Content -->
+            <div class="modal fade" id="howtoModal" role="dialog">
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                <br><br>
+                <!-- How To Modal dialog -->
+                <div class="modal-dialog modal-lg">
+
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                    <!-- How To Modal content -->
+                    <div class="modal-content text-center">
+
+                        <!-- How To Modal header -->
+                        <div class="modal-header header-red">
+                            <h4 class="modal-title">Hover + Lightbox Image Gallery Example</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--^^ How To Modal header -->
+
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                        <!-- How To Modal body -->
+                        <div class="modal-body animated zoomIn">
+                            <h4>
+                                This example demonstrates and provides examples for
+                                <br><br>
+                                <code>Hover Effects</code> and <code>Lightbox</code>
+                                <br><br>
+                                functionality with images and image galleries.
+                            </h4>
+                            <br>
+                            <h4>
+                                See the <a href="gallery-example-notes.txt" target="_blank">gallery-example-notes.txt</a> for step by step details for how to use these features.
+                            </h4>
+
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <hr>
+                            <h4>
+                                This example <u><i class="bg-red">requires</i></u> our <i class="bg-red">Extensions's</i> plug-in:
+                                <br><br>
+                                To use this you must <u><i class="bg-red">include</i></u> these files in your project folder
+                                <br>
+                                and <u><i class="bg-red">link</i></u> to these files in each of your html pages:
+                            </h4>
+                            <p>
+                                <code>./css/extensions.css</code>
+                                <br>
+                                <code>./js/extensions.js</code>
+                                <br>
+                            </p>
+
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <hr>
+                            <h4>
+                                This example also uses the <a href="https://daneden.github.io/animate.css/">animate.css</a> plugin for animation.
+                                <br><br>
+                                To use this you need to link in:
+                            </h4>
+                            <p>
+                                <code>animate.css</code> from the <code>cloudflare.com</code> CDN
+                            </p>
+
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <hr>
+                            <div class="hover-item top_and_bottom">
+                                <a href="images/sm-12.jpg" data-toggle="lightbox" data-gallery="family" data-title="Evidence and Reason" data-footer="2 + 2 = 4">
+                                    <div class="hover-img">
+                                        <img class="img-fluid mx-block img-thumbnail" src="images/sm-12.jpg" alt="img-4">
+                                    </div>
+                                    <div class="hover-info">
+                                        <h3>Evidence and Reason</h3>
+                                        <p>Trust Scientific Facts not Alternative Facts
+                                            <br>
+                                            2 + 2 = 4
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <hr>
+                            <i class="bg-blue">*All images in this example where selected randomly from student suggestions.</i>
+
+                        </div>
+                        <!--^^ How To Modal body -->
+
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                        <!-- How To Modal footer -->
+                        <div class="modal-footer header-red">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        <!--^^ How To Modal footer -->
+
+                    </div>
+                    <!--^^ How To Modal content-->
+
+                </div>
+                <!--^^ How To Modal dialog-->
+
+            </div>
+            <!--^^ How To Modal -->
+
+        </div>
+        <!-- ^^container -->
+
+    </section>
+    <!-- ^^section -->
+
+    <!-- *************************************************************** -->
+    <!-- Hover Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <hr>
+    <section id="hover">
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- Hover - Title -->
+            <div class="row animated flip">
+                <div class="offset-3 col-6 col-offset-3 bg-red text-center">
+                    <h2 class="text-center">Image Hover Effects</h2>
+                </div>
+
+            </div>
+            <!-- ^^row - title -->
+
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- Hover Example row -->
+            <div class="row no-gutters animated slideInUp">
+                <div class="col-12 col-md-4">
+
+                    <div class="hover-item top_and_bottom">
+                        <a href="#nogo">
+                            <div class="hover-img">
+                                <img class="img-fluid mx-block border" src="images/sm-7.jpeg" alt="img-1">
+                            </div>
+                            <div class="hover-info">
+                                <h3>Heading 1 here</h3>
+                                <p>Uses the hover effect class &nbsp;<code>.top_and_bottom</code></p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- ^^col -->
+
+                <div class="col-12 col-md-4">
+
+                    <div class="hover-item scale_up">
+                        <a href="#nogo">
+                            <div class="hover-img">
+                                <img class="img-fluid mx-block border" src="images/sm-3.jpeg" alt="img-1">
+                            </div>
+                            <div class="hover-info">
+                                <h3>Heading 2 here</h3>
+                                <p>Uses the hover effect class &nbsp;<code>.scale_up</code></p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- ^^col -->
+
+                <div class="col-12 col-md-4">
+
+                    <div class="hover-item bottom_to_top">
+                        <a href="#nogo">
+                            <div class="hover-img">
+                                <img class="img-fluid mx-block border" src="images/sm-5.jpeg" alt="img-1">
+                            </div>
+                            <div class="hover-info">
+                                <h3>Heading 3 here</h3>
+                                <p>Uses the hover effect class &nbsp;<code>.bottom_to_top</code></p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- ^^col -->
+
+            </div>
+            <!-- ^^row -->
+
+        </div>
+        <!-- ^^ Hover container -->
+
+    </section>
+    <!-- ^^ Hover section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Lightbox Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="lbox">
+        <hr>
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- Lightbox - Title -->
+            <div class="row animated flip">
+                <div class="offset-3 col-6 offset-3 bg-blue">
+                    <h2 class="text-center">Lightbox Effects</h2>
+                </div>
+            </div>
+            <!-- ^^Row  -->
+
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- Lightbox Example - row -->
+            <div class="row no-gutters animated slideInUp">
+                <div class="col-12 col-md-4">
+
+                    <a href="images/sm-15.jpeg" data-toggle="lightbox" data-gallery="example-gallery-1" data-title="Title 1 Goes Here" data-footer="Custom footer text 1 goes here">
+                        <img class="img-fluid mx-block border" src="images/sm-15.jpeg" alt="image-2">
+                    </a>
+
+                </div>
+                <!-- ^^col -->
+
+                <div class="col-12 col-md-4">
+
+                    <a href="images/sm-16.jpeg" data-toggle="lightbox" data-gallery="example-gallery-1">
+                        <img class="img-fluid mx-block border" src="images/sm-16.jpeg" alt="image-2">
+                    </a>
+
+                </div>
+                <!-- ^^col -->
+
+                <div class="col-12 col-md-4">
+
+                    <a href="images/sm-17.jpeg" data-toggle="lightbox" data-gallery="example-gallery-1" data-title="Title 3 Goes Here" data-footer="Custom footer text 3 goes here">
+                        <img class="img-fluid mx-block border" src="images/sm-17.jpeg" alt="image-2">
+                    </a>
+
+                </div>
+                <!-- ^^col -->
+
+            </div>
+            <!-- ^^Row  -->
+
+        </div>
+        <!-- ^^ Hover container -->
+
+    </section>
+    <!-- ^^ Lightbox section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Both Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="hover-lbox">
+        <hr>
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- Hover + Lightbox Example - Title -->
+            <div class="row animated flip">
+                <div class="offset-3 col-6 offset-3 bg-red">
+                    <h2 class="text-center">Hover + Lightbox Effects</h2>
+                </div>
+            </div>
+            <!-- ^^row - title -->
+
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- Hover + Lightbox Example - row -->
+            <div class="row no-gutters animated slideInUp">
+                <div class="col-12 col-md-4">
+
+                    <div class="hover-item top_and_bottom">
+                        <a href="images/wm-1.jpg" data-toggle="lightbox" data-gallery="example-gallery-2" data-title="Random Title 1" data-footer="Custom footer 1 text">
+                            <div class="hover-img">
+                                <img class="img-fluid mx-block border" src="images/wm-1.jpg" alt="wm-1.jpg">
+                            </div>
+                            <div class="hover-info">
+                                <h3>Heading 1 here</h3>
+                                <p>Description 1 goes here</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- ^^col -->
+
+                <div class="col-12 col-md-4">
+
+                    <div class="hover-item scale_up">
+                        <a href="images/wm-6.jpg" data-toggle="lightbox" data-gallery="example-gallery-2" data-title="Random Title 2" data-footer="Custom footer 2 text">
+                            <div class="hover-img">
+                                <img class="img-fluid mx-block border" src="images/wm-6.jpg" alt="wm-6.jpg">
+                            </div>
+                            <div class="hover-info">
+                                <h3>Heading 2 here</h3>
+                                <p>Description 2 goes here</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <!-- ^^col -->
+
+                <div class="col-12 col-md-4">
+
+                    <div class="hover-item bottom_to_top">
+                        <a href="images/wm-3.jpg" data-toggle="lightbox" data-gallery="example-gallery-2" data-title="Random Title 3" data-footer="Custom footer 3 text">
+                            <div class="hover-img">
+                                <img class="img-fluid mx-block border" src="images/wm-3.jpg" alt="wm-3.jpg">
+                            </div>
+                            <div class="hover-info">
+                                <h3>Heading 3 here</h3>
+                                <p>Description 3 goes here</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- ^^col -->
+
+            </div>
+            <!-- ^^row -->
+
+        </div>
+        <!-- ^^ Both container -->
+
+    </section>
+    <!-- ^^ Both section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Footer Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="myFooter">
+
+        <div class="text-center footer-custom">
+            <br>
+            <a href="#topPage" title="To Top">
+                <span class="footer-glyphicon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+            </a>
+            <h3>Image Gallery Example</h3>
+            <br>
+        </div>
+
+    </section>
+    <!-- ^^ Footer Section -->
+
+    <!-- *************************************************************** -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- BS JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <script src="js/extensions.js"></script>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Smooth-Scroll Plugin JS -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#topPage"]');
+        var scroll = new SmoothScroll('a[href*="#hover"]');
+        var scroll = new SmoothScroll('a[href*="#lbox"]');
+        var scroll = new SmoothScroll('a[href*="#hover-lbox"]');
+
+    </script>
+    <!-- *************************************************************** -->
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+/*
+    parallax-example.css
+
+    This project uses the IC Brand Identity definitions for its Theme.
+
+
+*/
+
+/* ========================================================= */
+
+/* Parallax Image Rules */
+
+/* Setup a class for each section that will have a bg image */
+.homeICimg, 
+.moreICimg, 
+.contactICimg {
+  position: relative;
+  opacity: 1.0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*set the bg-image for each specific section */
+.homeICimg {
+  background-image: url("../images/ic-3.jpg");
+  min-height: 800px; /* set just for this example */
+}
+
+.moreICimg {
+  background-image: url("../images/ic-5.jpg");
+  min-height: 800px; /* set just for this example */
+}
+
+.contactICimg {
+  background-image: url("../images/ic-1.jpg");
+  min-height: 800px; /* set just for this example */
+} 
+
+
+/* ========================================================= */
+
+/* --------------------------------------------------------- */
+/*  IC Brand Fonts and Colors */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Crimson Text', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.ic-primary-font {
+    font-family: 'Crimson Text', serif;
+}
+
+.ic-secondary-font {
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.ic-blue {
+    background-color: #013158;
+    color: #FFFFFA;
+}
+
+.ic-gray {
+    background-color: #525052;
+    color: #FFFFFA;
+}
+
+.ic-gold {
+    background-color: rgba(255, 183, 0, 0.8);
+    color: #013158;
+}
+
+.ic-white {
+    color: #FFFFFA;
+}
+
+.ic-hr {
+    border-top: 1px solid #FFFFFA;
+}
+
+.btn-icBlue, .btn-icBlue:hover {
+    background-color: #013158;
+    color: #FFFFFA; 
+    border-color: transparent;
+
+}
+
+.btn-icGold, .btn-icGold:hover {
+    background-color: rgba(255, 183, 0, 1);
+    color: #FFFFFA; 
+    border-color: transparent;
+
+}
+
+.ic-glyphicon {
+    font-size: 2em;
+}
+
+/* --------------------------------------------------------- */
+/* containers layout styles */
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+/* ========================================================= */
+
+
+/* Navbar Style  */
+
+
+.navbar {
+    margin-bottom: 0;
+    color: #FFFFFA !important;
+    background-color: #013158;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #FFFFFA !important;
+    background-color: #013158 !important;
+}
+
+.navbar-header .icon-bar {
+    background-color: #FFFFFA !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #013158 !important;
+    background-color: #FFFFFA !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #FFFFFA !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FFFFFA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* --------------------------------------------------------- */
+
+
+/* social media hover colors */
+
+.social .fa-facebook:hover {
+    color: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    color: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    color: #e64522;
+}
+
+.social .fa-linkedin:hover {
+    color: #0094BC;
+}
+
+/* --------------------------------------------------------- */
+
+/* Footer */
+
+.footer-custom {
+    background-color: #013158;
+    color: #FFFFFA;
+    font-family: 'Open Sans', sans-serif;    
+
+}
+
+.footer-glyphicon {
+    color: #FFFFFA;
+    font-size: 2em;
+    letter-spacing: 2em;
+}
+

@@ -1,0 +1,283 @@
+Gallery Example Notes - v 6.2 - 11.20.19
+
+------------------------------------------------------------------
+1.0  Getting Started
+------------------------------------------------------------------
+
+This project provides examples for using hover effect's and a lightbox for images and image gallerys.
+
+Examples for:
+
+        - Hover Effects over image:
+        - Lightbox over images
+        - Animation
+    
+The primary components are:
+
+        gallery-example.html
+        ./css/gallery-example.css
+        ./images - for the images used in the examples
+
+The project illustrates how to:
+
+        - Use the Hover Effects
+        - Use the Lightbox Effects
+        - Use the Hover Effects and Lightbox together
+
+This project uses the Responsive Extra's extensions:
+    
+        ./css/extensions.css
+        ./js/extensions.js
+        
+You MUST use both of these in your project.  See Section 1.1 HOW TO USE for instructions. 
+
+This project also uses the animate.css plugin that is <link>'ed from a CDN
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Animate.css Plug-in -->
+    <!-- https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        
+See https://daneden.github.io/animate.css/ for examples
+    
+These files are REQUIRED if you want to use these optional features
+
+1.1  HOW TO USE 
+------------------------------------------------------------------
+
+To use any of these extensions in the ToolKit you must use these files:
+    
+        ./css/extensions.css
+        ./js/extensions.js
+        
+Step 1 - Be sure to copy BOTH of these files into their respective folders in your project
+
+    (a) add the ./css/extensions.css to your projects ./css folder
+    
+    (b) add the ./js/extensions.js to your projects ./js folder
+
+Step 2 - Be sure to include BOTH of these files in EACH html page in your project
+
+    (a) link in the ./css/extensions.css in EACH of your html pages in the <head> section
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <link rel="stylesheet" href="css/extensions.css">
+
+    (b) Add this the bottom of your <body> section
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <script src="js/extensions.js"></script>
+
+
+1.2  Resources
+------------------------------------------------------------------
+
+The Hover Effects and LightBox code was modfied from these plug-ins:
+
+    Hover Effects - http://gudh.github.io/ihover/dist/index.html
+
+    LightBox - https://github.com/ashleydw/lightbox
+    
+The Animation is used from directely linking to a plug-in from:
+    
+    Animation - https://daneden.github.io/animate.css/
+
+
+------------------------------------------------------------------
+2.0  Hover Effects
+------------------------------------------------------------------   
+
+The responsive-extras plug-in has been extended to add 3 Hover Effects that are implemented through these classes:
+
+    (1)  .top_and_bottom - an effect that animates a <h3> from the top over the image; and annimates a <p> from the bottom over the image; with a semi-transparent background (allowing some of the image to be seen under the hover background).
+
+    (2)  .scale_up - an effect that animates both the <h3> and the <p> from the middle of the image out to the sides of the image; with a non-transparent background (the image is not visible).
+
+    (3) .bottom_to_top - an effect that animates both the <h3> and <p> from the bottom over the image; with a semi-transparent background (allowing some of the image to be seen under the hover background).
+
+These Hover Effects all cover the associated image with a background that contains an optional <div> that uses the .hover-info class that supports adding text to title in a <h3> and a description in a <p>.  
+
+2.1  Hover Effects - How To
+------------------------------------------------------------------ 
+
+
+Step 0 - Start with your standard bootstrap <img> tag:
+
+
+        <img class="img-fluid img-thumbnail" src="images/1.jpg" alt="img-1">
+
+
+Step 1 - Wrap the <img> in a <div> that uses the .hover-img class.
+
+        <div class="hover-img">
+
+            <img class="img-fluid img-thumbnail" src="images/1.jpg" alt="img-1">
+
+        </div>
+
+
+Step 2 - Wrap this <div> in an <a> tag so the browser can sense when the hover over the <img>
+
+        <a href="#nogo">
+
+            <div class="hover-img">
+
+                <img class="img-fluid img-thumbnail" src="images/1.jpg" alt="img-1">
+
+            </div>
+
+        </a>
+
+
+Optional Step 3 - Optionally add <div> with the class .hover-info to display the text you want to appear when the image is hovered over
+
+        <a href="#nogo">
+
+            <div class="hover-img">
+
+                <img class="img-fluid img-thumbnail" src="images/1.jpg" alt="img-1">
+
+            </div>
+
+            <div class="hover-info">
+                <h3>Heading 3 here</h3>
+                <p><code>.hover-item .bottom_to_top</code></p>
+            </div>
+
+        </a>
+
+
+Step 4 - now wrap all of this inside a <div> with that uses the class .hover-item and any ONE of the hover effect classes .top_and_bottom or .scale_up or .bottom_to_top
+
+        <div class="hover-item bottom_to_top">
+
+            <a href="#nogo">
+
+                <div class="hover-img">
+
+                    <img class="img-fluid img-thumbnail" src="images/1.jpg" alt="img-1">
+
+                </div>
+                <!-- ^^.hover-img -->
+
+                <div class="hover-info">
+
+                    <h3>Heading 3 here</h3>
+                    <p><code>.hover-item .bottom_to_top</code></p>
+
+                </div>
+                <!-- ^^.hover-info -->
+
+            </a>
+
+        </div>
+        <!-- ^^.hover-item -->
+
+
+------------------------------------------------------------------
+3.0  LightBox
+------------------------------------------------------------------   
+
+
+
+3.1  Light Box - How To
+------------------------------------------------------------------ 
+
+Step 0 - Start with your standard bootstrap <img> tag:
+
+
+        <img class="img-fluid img-thumbnail" 
+             src="images/1.jpg" 
+             alt="img-1">
+
+
+Step 1 - Wrap the <img> tag in an <a> tag.
+
+    - Using the same image (or a different much larger image) as the href attribute value; and 
+    - Include the the new attribute=value combo data-toggle="lightbox" to make it a lightbox
+
+
+ ->     <a 
+ ->        href="images/1.jpg" 
+ ->        data-toggle="lightbox" >
+
+                <img class="img-fluid img-thumbnail center-block" src="images/1.jpg" alt="image-1">
+
+ ->     </a>
+
+
+Optional Step 2 - Optionally add title and footer text using the date-title and data-footer attributes 
+
+
+        <a href="images/1.jpg" 
+           data-toggle="lightbox" 
+
+ ->        data-title="Title 1 Goes Here" 
+ ->        data-footer="Custom footer text 1 goes here">
+
+                <img class="img-fluid img-thumbnail center-block" src="images/1.jpg" alt="image-1">
+        </a>
+
+
+Optional Step 3 - Optionally group sets of images together in a gallery using the data-gallery attribute (note, the value needs to be unique across multiple galleries)
+
+
+        <a href="images/1.jpg" 
+           data-toggle="lightbox" 
+
+ ->        data-gallery="example-gallery"           
+
+           data-title="Title 1 Goes Here" 
+           data-footer="Custom footer text 1 goes here">
+
+                <img class="img-fluid img-thumbnail center-block" src="images/1.jpg" alt="image-1">
+        </a>
+
+------------------------------------------------------------------
+4.0  Using Smooth Scrolling in this Project
+------------------------------------------------------------------
+
+You will notice that there is a delayed "smooth" scrolling when you click on each of the links in the nav bar.
+
+This is an attractive feature for single page mulit-section pages.
+
+To set this up.  You have your standard nav links.  Where each <a> tag in the nav links to a #someID that links to a section in the page.  As noted above, this example uses #someID's for navigation to the top of the page as well as each of the multiple sections of the page
+
+        <li class="nav-item">
+            <a class="nav-link" href="#hover">Hover</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#lbox">Lightbox</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#hover-lbox">Both</a>
+        </li>   
+
+To get the "smooth scrolling" you need to:
+
+Step 1 - include the extensions.css and extensions.js in your project and all your HTML pages as detailed above in Section 1.1 HOW TO USE
+
+And then you need to add a snippet after you include the extensions.js code at the bottom of your page.
+
+So at the bottom of your page, before the closing </body> tag you, should now, have:
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <script src="js/extensions.js"></script>
+
+and, after this, you then need to include the following snippet:
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Smooth-Scroll Plugin JS -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#topPage"]');
+        var scroll = new SmoothScroll('a[href*="#hover"]');
+        var scroll = new SmoothScroll('a[href*="#hover-lbox"]');
+        var scroll = new SmoothScroll('a[href*="#contactIC"]');
+    </script>
+
+And be sure to change the #topPage (and the other #ID's) to whatever you page section #ID's are.
+
+

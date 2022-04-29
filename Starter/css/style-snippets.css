@@ -1,0 +1,147 @@
+/*
+    style-examples.css
+
+    This is the page that will have all the CSS for our project site.
+*/
+
+
+/* ========================================================= */
+
+
+/*  IMPORTS for fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* ========================================================= */
+
+
+/*  Page Level Style Rules */
+
+
+/* --------------------------------------------------------- */
+
+
+/* body styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://ak1.picdn.net/shutterstock/videos/15268321/thumb/1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* --------------------------------------------------------- */
+
+
+/* containers layout styles */
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+
+/* ========================================================= */
+
+
+/* Navbar Style  */
+
+.navbar {
+    margin-bottom: 0;
+    color: #FFFFFA !important;
+    background-color: #6096BA;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #FFFFFA !important;
+    background-color: #6096BA !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #6096BA !important;
+    background-color: #FFFFFA !important;
+}
+
+.navbar-toggler {
+    border-color: #FFFFFA;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* ========================================================= */
+
+/* Button Styles */
+
+.btn-custom {
+    color: #FFFFFA !important;
+    background-color: #6096BA !important;
+    border-color: transparent;
+}
+
+
+/* ========================================================= */
+
+
+/* card Styles */
+
+.card-heading {
+    background-color: #D6D5B3 !important;
+    color: #000103 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.card-body {
+    background-color: #D6D5B3 !important;
+    color: #000103 !important;
+    border-top: 1px solid #ddd !important;
+}
+
+.card-footer {
+    background-color: #D6D5B3 !important;
+    color: #000103 !important;
+    border-top: 1px solid #ddd !important;
+}
+
+
+/* ========================================================= */
+
+
+/* Tab Styles */
+
+.nav-tabs {
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    font-family: Roboto, sans-serif;
+}
+
+.nav-tabs li a {
+    color: #FFFFFA;
+    !important;
+    background-color: #6096BA !important;
+}
+
+.tab-content {
+    background-color: #FFFFFA;
+}
+
+.nav-tabs li a:hover,
+.nav-tabs li.active a {
+    color: #6096BA !important;
+    background-color: #FFFFFA !important;
+}
+

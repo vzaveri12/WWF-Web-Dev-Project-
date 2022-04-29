@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Parallax Example V6.2</title>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Font Awesome CSS -->
+    <!-- https://fontawesome.com/v4.7.0/get-started/ -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Animate.css Plug-in -->
+    <!-- https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <link rel="stylesheet" href="css/extensions.css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- My Project CSS -->
+    <link rel="stylesheet" href="css/parallax-example.css">
+</head>
+
+<!-- *************************************************************** -->
+
+<body id="topPage" data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- *************************************************************** -->
+    <!-- Responsive Navigation Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <nav class="navbar fixed-top navbar-expand-md">
+
+        <a class="navbar-brand" href="#topPage">Parallax V6.2</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="nav navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#homeIC">IC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#moreIC">More IC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactIC">Contact IC</a>
+                </li>   
+            </ul>                
+            
+            <!-- social media icons -->        
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://fontawesome.com/v4.7.0/" target="_blank">Font Awesome 4.7</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="docs/parallax-example-notes.txt" target="_blank">Notes</a>
+                </li>
+            </ul>            
+        </div>
+        <!-- ^^collapse -->
+        
+    </nav>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    
+    <!-- *************************************************************** -->
+    <!-- Intro Section Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="homeIC" class="homeICimg">
+
+        <div class="container-fluid text-center">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div class="row ic-gold animated zoomIn">
+                <div class="col-12 col-md-12">
+                    <h1>Parallex</h1>
+                    <hr class="ic-hr">
+                </div>
+                <!-- ^col -->
+            </div>
+            <!-- ^^row -->
+            
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div class="row ic-gold animated zoomIn">
+                <div class="col-12">
+            
+                    <h3>
+                        We specialize in 
+                        <br><br>
+                        <i>Parallex Background Images</i> 
+                        <br> <br>
+                        and
+                        <br><br>
+                        <i>Smooth Scrolling</i>
+                    </h3>
+                                      
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                    <!-- Modal 1 - Trigger -->
+                    <br><br>
+                    <button type="button" class="btn btn-icBlue" data-toggle="modal" data-target="#howtoModal">How To</button>
+
+                    <br><br>
+
+                </div>
+                <!--^^col -->                
+            </div>
+            <!--^^ row -->
+                    
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <!-- How To Modal - Content -->
+            <div class="modal fade" id="howtoModal" role="dialog">
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                <br><br>
+                <!-- How To Modal dialog -->
+                <div class="modal-dialog modal-lg">
+
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                    <!-- How To Modal content -->
+                    <div class="modal-content text-center">
+
+                        <!-- How To Modal header -->
+                        <div class="modal-header ic-blue">
+                            <h4 class="modal-title">
+                                Parallax Scrolling Example
+                            </h4>
+                            
+                            <button type="button" class="btn btn-icBlue" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--^^ How To Modal header -->
+
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                        <!-- How To Modal body -->
+                        <div class="modal-body ic-gold animated zoomIn">
+                            
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <h4>Please throughly review the notes in:</h4>
+                            <a href="parallax-example-notes.txt" target="_blank">parallax-example-notes.txt</a>  
+                            <h4>in the project folder for details on how this was set up.
+                            </h4>
+                            
+                            <h4>And then also please review the code in:</h4>
+                            <code>./css/parallax-example.css</code>
+                            <h4>and how it is then used in:</h4>
+                            <code>parallax-example.html</code>
+                                                        
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <hr class="ic-hr">
+                            <h4>
+                                This example <u><i class="bg-red">requires</i></u> our <i class="bg-red">Extensions's</i> plug-in:
+                                <br><br>
+                                To use this you must <u><i class="bg-red">include</i></u> these files in your project folder 
+                                <br>
+                                and <u><i class="bg-red">link</i></u> to these files in each of your html pages:
+                            </h4>
+                            <p>
+                                <code>./css/extensions.css</code>
+                                <br>
+                                <code>./js/extensions.js</code>
+                                <br>
+                            </p>
+                            
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                            <hr class="ic-hr">
+                            <h4>
+                                This example also uses the <a href="https://daneden.github.io/animate.css/">animate.css</a> plugin for animation.  
+                                <br><br>
+                                To use this you need to link in:
+                            </h4>
+                            <p>
+                                 <code>animate.css</code> from the <code>cloudflare.com</code> CDN
+                            </p>
+                                                        
+                            
+                        </div>
+                        <!--^^ How To Modal body -->
+
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                        <!-- How To Modal footer -->
+                        <div class="modal-footer ic-blue">
+                            <button type="button" class="btn btn-icGold" data-dismiss="modal">Close</button>
+                        </div>
+                        <!--^^ How To Modal footer -->
+
+                    </div>
+                    <!--^^ How To Modal content-->
+
+                </div>
+                <!--^^ How To Modal dialog-->
+
+            </div>
+            <!--^^ How To Modal -->
+                    
+        </div>
+        <!-- ^^container -->
+
+    </section>
+    <!-- ^^section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- More IC Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="moreIC" class="moreICimg">
+
+        <div class="container-fluid text-center">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div class="row ic-gold animated zoomIn">
+                <div class="col-12 col-md-12">
+                    <h2>More IC</h2>
+                    <hr class="ic-hr">
+                </div>
+                <!-- ^col -->
+            </div>
+            <!-- ^^row -->
+
+            <!-- Row 1 -->
+            <div class="row ic-gold animated zoomIn">
+                
+                <br>
+                
+                <div class="col-4">
+                    <h4>FEEL THE IC POWER</h4>
+                    <p>Go to class...</p>
+                </div>
+
+                <div class="col-4">
+                    <h4>TAKE THE IC PATH</h4>
+                    <p>Do the work...</p>
+                </div>
+
+                <div class="col-4">
+                    <h4>DO THE IC HARD WORK</h4>
+                    <p>Ask for help...</p>
+                </div>
+                
+            </div>
+            <!-- ^^Row 1 -->
+
+        </div>
+        <!-- ^^container -->
+
+    </section>
+    <!-- ^^section -->
+    
+    <!-- *************************************************************** -->
+    <!-- Contact IC Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="contactIC" class="contactICimg">
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div class="row ic-gold animated zoomIn">
+                <div class="col-12 col-md-12">
+                    <h2 class=" text-center">Contact IC</h2>
+                    <hr class="ic-hr">
+                </div>
+                <!-- ^col -->
+            </div>
+            <!-- ^^row -->
+        
+            <!-- Row 1 -->
+            <div class="row ic-gold animated zoomIn">
+                <div class="col-12">
+
+                    <h4 class=" text-center">Log In (its the only way to contact IC)</h4>
+
+                    <!-- horizontal form  -->
+                    <form class="form-horizontal" role="form">
+
+                        <div class="form-group">
+                            <label class="control-label col-2" for="email">Email:</label>
+                            <div class="col-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                        <div class="form-group">
+                            <label class="control-label col-2" for="pwd">Password:</label>
+                            <div class="col-10">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                        <div class="form-group">
+                            <div class="offset-2 col-10">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                        <div class="form-group">
+                            <div class="offset-2 col-10">
+                                <button type="button" class="btn btn-icBlue">Submit</button>
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                    </form>
+                    <!-- ^^form -->
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+                </div>
+                <!-- ^^col -->
+
+            </div>
+            <!-- ^^row -->
+
+        </div>
+        <!-- ^^container -->
+
+    </section>
+    <!-- ^^section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Footer Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="myFooter">
+
+            <div class="text-center footer-custom">
+                <br>
+                <a href="#topPage" title="To Top">
+                    <span class="footer-glyphicon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                </a>
+                <h3>Parallax Scrolling Example</h3>
+                <br>
+
+                <!-- social media icons -->        
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="social footer-glyphicon" href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social footer-glyphicon"  href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social footer-glyphicon"  href="https://google.com"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social footer-glyphicon"  href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+
+    </section>
+    <!-- ^^ Footer Section -->
+
+    <!-- *************************************************************** -->
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- BS JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Responsive Extensions CSS -->
+    <script src="js/extensions.js"></script>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Smooth-Scroll Plugin JS -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#topPage"]');
+        var scroll = new SmoothScroll('a[href*="#homeIC"]');
+        var scroll = new SmoothScroll('a[href*="#moreIC"]');
+        var scroll = new SmoothScroll('a[href*="#contactIC"]');
+    </script>
+    
+    <!-- *************************************************************** -->
+
+</body>
+
+</html>

@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- *************************************************************** -->
+<!-- HEAD Section -->
+
+<head>
+
+    <title>Responsive Examples V6.0</title>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Extenstions CSS -->
+    <link rel="stylesheet" href="css/extensions.css">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- My Project CSS -->
+    <link rel="stylesheet" href="css/responsiveExamples.css">
+
+</head>
+
+<!-- *************************************************************** -->
+<!-- BODY Section -->
+
+<body id="topPage" data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- *************************************************************** -->
+    <!-- Facebook embed requirement -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+    <!-- *************************************************************** -->
+
+    <!-- *************************************************************** -->
+    <!-- Responsive Navigation Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Nav Bar Section -->
+    <nav class="navbar fixed-top navbar-expand-xl" >
+
+        <a class="navbar-brand" href="#topPage">Responsive v6.0</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/docs/resonsiveNotes.txt" target="_blank">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#grid">Grid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fancycards">Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#magic-tabs">Tabs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carousel-video">Carousel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#embed-video">Embed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#embed-fb-gmap">FB & Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formNtable">Table & Form</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- *************************************************************** -->
+    <!-- Intro Section Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="intro">
+
+        <div class="container-fluid text-center">
+
+            <h1>RESPONSIVE EXAMPLES V6.0</h1>
+            <h3>We specialize in Responsive Examples</h3>
+
+            <p>
+                <strong>References: </strong>
+                <a href="docs/resonsiveNotes.txt" target="_blank">Project Notes</a>
+                |
+                <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">GetBootstrap</a>
+                |
+                <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">W3Schools</a>
+            </p>
+
+            <br>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Modal Section -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-custom btn-wrap-text" data-toggle="modal" data-target="#myModal">
+                Architecture
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                <!-- move below the fixed nav -->
+                <br><br>
+
+                <div class="modal-dialog" role="document">
+
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Modal Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- ^^Modal Header -->
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <img class="img-fluid mx-auto d-block rounded" src="https://placeimg.com/500/500/arch" alt="architecture">
+                            <br><br>
+                            <p>Additional Content goes here.</p>
+                        </div>
+                        <!-- ^^ Modal Body -->
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+                        </div>
+                        <!-- ^^Modal Footer -->
+
+                    </div>
+                    <!--^^ Modal Content -->
+
+                </div>
+                <!--^^ Modal Dialog -->
+
+
+            </div>
+            <!--^^ Modal -->
+
+        </div>
+        <!-- ^^container -->
+
+    </section>
+    <!-- ^^section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Responsive Grid Content Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="grid">
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <h2 class="text-center">GRID</h2>
+
+            <p>
+                <strong>Reference: </strong>
+                <a href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">GetBootsrap</a>
+                |
+                <a href="https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp" target="_blank">W3Schools</a>
+            </p>
+
+            <table class="table table-responsive table-bordered">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th class="bg-secondary">Extra small</th>
+                    <th class="bg-secondary">Small</th>
+                    <th class="bg-secondary">Medium</th>
+                    <th class="bg-secondary">Large</th>
+                    <th class="bg-secondary">Extra Large</th>
+                </tr>
+                <tr>
+                    <td class="bg-secondary"><strong>Class prefix</strong></td>
+                    <td><code>.col-</code></td>
+                    <td><code>.col-sm-</code></td>
+                    <td><code>.col-md-</code></td>
+                    <td><code>.col-lg-</code></td>
+                    <td><code>.col-xl-</code></td>
+                </tr>
+                <tr>
+                    <td class="bg-secondary"><strong>Screen width</strong></td>
+                    <td>&lt;576px</td>
+                    <td class="w3-dark-grey">&gt;=576px</td>
+                    <td>&gt;=768px</td>
+                    <td>&gt;=992px</td>
+                    <td>&gt;=1200px</td>
+                </tr>
+            </table>
+
+            <hr class="border-dark">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <h4>1. One size using the default: <code>col-4 col-4 col-4</code> does not stack!</h4>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Row -1 -->
+            <div class="row text-center">
+                <div class="col-4 border border-dark">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="col-4 border border-dark">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4>CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="col-4 border border-dark">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <!-- ^^Row 1 -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <br>
+            <hr class="border-dark">
+            <h4>2. One size using: <code>col-sm-4 col-sm-4 col-sm-4</code> just stacks!</h4>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Row 2 -->
+            <div class="row text-center">
+                <div class="col-sm-4 border border-dark">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="col-sm-4 border border-dark">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4>CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="col-sm-4 border border-dark">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <!-- ^^Row 2 -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Row 3 -->
+            <br>
+            <hr class="border-dark">
+            <h4>3. Convert sizes: <code>col-sm-4 col-sm-4 col-sm-4</code> into <code>col-12 col-6 col-6</code></h4>
+            <br>
+
+            <div class="row text-center">
+                <div class="border border-dark col-sm-4 col-12">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <!-- need this when changing a single row into mulitple rows between screen sizes -->
+                <div class="clearfix"></div>
+
+                <div class="border border-dark col-sm-4 col-6">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4>CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4 col-6">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <!-- ^^Row 3 -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <br>
+            <hr class="border-dark">
+            <h4>4. Convert sizes: <code>col-sm-4 col-sm-4 col-sm-4</code> into <code>col-3 col-6 col-3</code></h4>
+            <br>
+
+            <!-- Row 4 -->
+            <div class="row text-center">
+
+                <div class="border border-dark col-sm-4 col-3">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+
+                </div>
+
+                <div class="border border-dark col-sm-4 col-6">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4>CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4 col-3">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+            </div>
+            <!-- ^^Row 4 -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <br>
+            <hr class="border-dark">
+            <h4>5. Hide elements in xs: <code>col-md-4 col-md-4 col-md-4</code> hiding elements in each row using <code>d-none d-sm-block</code></h4>
+            <br>
+
+            <!-- Row 5 -->
+            <div class="row text-center">
+
+                <div class="border border-dark col-sm-4">
+                    <i class="fa fa-align-left d-none d-sm-block" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4 class="d-none d-sm-block">CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p class="d-none d-sm-block">Lorem ipsum dolor sit amet..</p>
+                </div>
+
+            </div>
+            <!-- ^^Row 5 -->
+                
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <br>
+            <hr class="border-dark">
+            <h4>6. Hide column: <code>col-md-4 col-md-4 col-md-4</code> hiding the 2nd col into using <code>d-none d-sm-block</code> </h4>
+            <br>
+
+            <!-- Row 6 -->
+            <div class="row text-center">
+
+                <div class="border border-dark col-sm-4">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4 d-none d-sm-block">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4>CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+            </div>
+            <!-- ^^Row 6 -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <br>
+            <hr class="border-dark">
+            <h4>7. Hide row: <code>col-md-4 col-md-4 col-md-4</code> into <code>d-md-none</code> for entire row</h4>
+            <br>
+
+            <!-- Row 7 -->
+            <div class="row text-center ">
+
+                <div class="border border-dark col-sm-4 d-none d-sm-block">
+                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                    <h4>LEFT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4 d-none d-sm-block">
+                    <i class="fa fa-align-center" aria-hidden="true"></i>
+                    <h4>CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+                <div class="border border-dark col-sm-4 d-none d-sm-block">
+                    <i class="fa fa-align-right" aria-hidden="true"></i>
+                    <h4>RIGHT</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+            </div>
+            <!-- ^^Row 7 -->
+
+        </div>
+        <!-- ^^ Responsive Grid Content container -->
+
+    </section>
+    <!-- ^^ Responsive Grid Content section -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Responsive cards -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="fancycards">
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Fancy Cards Example -->
+            <h2 class="text-center">RESPONSIVE CARDS</h2>
+
+            <h4>1. Cards setup in a <code>&lt;div class="row"&gt; &lt;div class="col-sm-4 col-12"&gt;</code></h4>
+            <!-- Row -->
+            <div class="row">
+
+                <!-- col -->
+                <div class="col-sm-4 col-12">
+
+                    <!-- card -->
+                    <div class="card card-info">
+                        <div class="card-heading text-center">
+                            <h4>Freddie</h4>
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid mx-auto d-block" src="http://placekitten.com/302/300" alt="freddie kitty">
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-custom mx-auto d-block">Adopt Now!</button>
+                        </div>
+                    </div>
+                    <!-- ^^card -->
+
+                </div>
+                <!-- ^^col -->
+
+                <!-- col -->
+                <div class="col-sm-4 col-12">
+
+                    <!-- card -->
+                    <div class="card card-info">
+                        <div class="card-heading text-center">
+                            <h4>Bettie</h4>
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid mx-auto d-block" src="http://placekitten.com/300/299" alt="Bettie kitty">
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-custom mx-auto d-block">Adopt Now!</button>
+                        </div>
+                    </div>
+                    <!-- ^^card -->
+
+                </div>
+                <!-- ^^col -->
+
+                <!-- col -->
+                <div class="col-sm-4 col-12">
+
+                    <!-- card -->
+                    <div class="card card-info">
+                        <div class="card-heading text-center">
+                            <h4>Sweattie</h4>
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid mx-auto d-block" src="http://placekitten.com/299/300" alt="Sweattie kitty">
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-custom mx-auto d-block">Adopt Now!</button>
+                        </div>
+                    </div>
+                    <!-- ^^card -->
+
+                </div>
+                <!-- ^^col -->
+
+            </div>
+            <!-- ^^row -->
+
+            <br>
+            <br>
+
+            <h4>2. Cards setup in a <code>&lt;div class="card-deck"&gt;</code></h4>
+
+            <!-- Card:  groups -->
+            <div class="card-deck">
+
+                <!-- Card:  Image Top -->
+                <div class="card">
+                    <img class="card-img-top" src="https://placeimg.com/200/200/people" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-custom mx-auto d-block">Adopt Now!</button>
+                    </div>
+                </div>
+                <!-- Card:  Image Top -->
+                <div class="card">
+                    <img class="card-img-top" src="https://placeimg.com/200/200/animals" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-custom mx-auto d-block">Adopt Now!</button>
+                    </div>
+                </div>
+                <!-- Card:  Image Top -->
+                <div class="card">
+                    <img class="card-img-top" src="https://placeimg.com/200/200/arch" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-custom mx-auto d-block">Adopt Now!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ^^ Responsive cards container -->
+
+    </section>
+    <!-- ^^ Responsive Panles section -->
+
+    <!-- *************************************************************** -->
+    <!-- Responsive Tabs Examples  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="magic-tabs">
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Tabs to Collapse Container  -->
+        <div class="container-fluid">
+
+            <h2 class="text-center">Responsive Tabs</h2>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- row -->
+            <div class="row">
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- col 1 - Tabs to Collapse-->
+                <div class="col-sm-12">
+
+                    <h3>Responsive Tabs using
+                        <code>&lt;ul class="... flex-column flex-lg-row ..."&gt;</code></h3>
+
+                    <div>
+
+                        <!-- Tab Links -->
+                        <ul class="nav nav-tabs flex-column flex-sm-row" id="myTab" role="tablist">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#door1" role="tab">Door Number 1</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#door2" role="tab">Door Number 2</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#door3" role="tab">Door Number 3</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#door4" role="tab">Door Number 4</a>
+                            </li>
+                        </ul>
+
+                        <!-- tab content -->
+                        <div class="tab-content border border-dark rounded-bottom">
+
+                            <div role="tab-pane" class="tab-pane active" id="door1">
+                                <h2 class="text-center"><strong>Door One</strong></h2>
+                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/800/400?image=1078" alt="Door 1">
+                                <h4 class="text-center">Yes, this is door 1</h4>
+                            </div>
+
+                            <div role="tab-pane" class="tab-pane" id="door2">
+                                <h2 class="text-center"><strong>Door Two</strong></h2>
+                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/800/400?image=1074" alt="Door 2">
+                                <h4 class="text-center">Yes, this is door 2</h4>
+                            </div>
+
+                            <div role="tab-pane" class="tab-pane" id="door3">
+                                <h2 class="text-center"><strong>Door Three</strong></h2>
+                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/800/400?image=1025" alt="Door 3">
+                                <h4 class="text-center">Yes, this is door 3</h4>
+                            </div>
+
+                            <div role="tabcard" class="tab-pane" id="door4">
+                                <h2 class="text-center"><strong>Door Four</strong></h2>
+                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/800/400?image=967" alt="Door 4">
+                                <h4 class="text-center">Yes, this is door 4</h4>
+                            </div>
+
+                        </div>
+                        <!-- ^^ tab content -->
+                    </div>
+                    <br>
+
+                </div>
+                <!-- ^^ col 1 - Tabs to Collapse -->
+
+            </div>
+            <!-- ^^ row -->
+
+        </div>
+        <!-- ^^ Tabs Container  -->
+
+    </section>
+    <!-- ^^ Tabs Section -->
+
+    <!-- *************************************************************** -->
+    <!-- Carousel Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="carousel-video">
+
+        <div class="container-fluid">
+
+            <h2 class="text-center">CAROUSEL WITH EMBED VIDEO</h2>
+            <h4 class="text-center">Responsive Carousel</h4>
+            <br>
+            <h4>Hide captions in <code>sm</code> and <code>xs</code> display size and using <code>&lt;div class="carousel-caption d-none d-md-block"&gt;</code></h4>
+
+            <!-- Carousel -->
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- item 1 -->
+                    <div class="carousel-item active">
+
+                        <!-- resposive vid div -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9jK-NcRmVcw">
+                            </iframe>
+                        </div>
+                        <!-- ^^ resposive vid div -->
+
+                        <!-- Caption -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>The Final Countdown</h3>
+                            <p>
+                                We're leaving together, But still it's farewell<br> And maybe we'll come back To earth, who can tell?
+                            </p>
+                        </div>
+                        <!-- ^^Caption -->
+
+
+                    </div>
+                    <!-- item 2 -->
+
+                    <!-- item 2 -->
+                    <div class="carousel-item">
+
+                        <!-- resposive vid div -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zUzd9KyIDrM">
+                            </iframe>
+                        </div>
+                        <!-- ^^ resposive vid div -->
+
+                        <!-- Caption -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>LaLaLaLaLaLaLaLaLa</h3>
+                            <p>
+                                Everybody's going to the party, have a real good time
+                                <br> Dancing in the desert, blowing up the sunshine</p>
+                        </div>
+                        <!-- ^^Caption -->
+
+                    </div>
+                    <!-- ^^ item 2 -->
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!-- ^^ Left and right controls -->
+
+
+            </div>
+            <!-- ^^ Carousel -->
+
+        </div>
+        <!-- ^^ Carousel container -->
+
+    </section>
+    <!-- ^^ Carousel section -->
+
+    <!-- *************************************************************** -->
+    <!-- Embedded Video Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="embed-video">
+
+        <div class="container-fluid text-center">
+
+            <h2>EMBED VIDEO</h2>
+            <h4>Responsive Embedded Video</h4>
+            <br>
+
+            <!-- row 1 -->
+            <div class="row">
+
+                <!-- col 1 -->
+                <div class="col-md-6">
+
+                    <h4>When it is the...</h4>
+
+                    <!-- responsive embed video -->
+                    <div class="embed-responsive embed-responsive-16by9">
+
+
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9jK-NcRmVcw">
+                        </iframe>
+
+
+                    </div>
+                    <!-- ^^ responsive embed video -->
+
+                </div>
+                <!-- ^^ col 1 -->
+
+                <!-- col 2 -->
+                <div class="col-md-6">
+
+                    <h4>You need to...</h4>
+
+                    <!-- responsive embed video -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zUzd9KyIDrM"></iframe>
+                    </div>
+                    <!-- ^^ responsive embed video -->
+
+                </div>
+                <!-- ^^ col 2 -->
+
+            </div>
+            <!-- ^^Row 1 -->
+
+        </div>
+        <!-- ^^ Embedded Video container -->
+
+        <br>
+    </section>
+    <!-- ^^ Embedded Video section -->
+
+    <!-- *************************************************************** -->
+    <!-- Embedd Friend Face & G-Maps Examples  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="embed-fb-gmap">
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Embedd Friend Face & G-Maps Examples Container  -->
+        <div class="container-fluid">
+
+            <h2 class=" text-center">Friend Face and Google Maps</h2>
+            <h4 class=" text-center">Responsive Embed</h4>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Embedd Friend Face & G-Maps Examples Examples -->
+            <div class="row">
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- FF embed col -->
+                <div class="col-md-6 col-12 border border-dark">
+                    <h4>
+                        Embed Friend Face using
+                        <br>
+                        <code>&lt;div class="fb-page" ...&gt;</code></h4>
+                    <br>
+
+                    <!-- resposive fb div -->
+                    <div class="">
+
+                        <div class="fb-page" data-href="https://www.facebook.com/ithacacollege/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/ithacacollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ithacacollege/">Ithaca College</a></blockquote>
+                        </div>
+                        
+                    </div>
+
+                    <!-- ^^ resposive fb div -->
+
+                </div>
+                <!-- ^^ FF embed col -->
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- G-Map embed col -->
+                <div class="col-md-6 col-12 border border-dark">
+                    <h4>
+                        Embed G-Map using
+                        <br>
+                        <code>&lt;iframe remove height="xxx" width="100%" ...&gt;</code>
+                        <br>or<br>
+                        <code>
+                            &lt;iframe add class="gmap-iframe"&gt; 
+                            <br>
+                            remove height="" width="" 
+                        </code>
+                    </h4>
+                    <br>
+
+                    <!-- resposive g-map div -->
+                    <div class="embed-responsive-item">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11781.141908413063!2d-76.498564!3d42.421658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a54cd63ed9a4422!2sIthaca%20College!5e0!3m2!1sen!2sus!4v1573082362743!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+                        </iframe>
+                        
+                    </div>
+                    <!-- ^^ resposive g-map div -->
+
+                </div>
+                <!-- ^^ G-Map embed col -->
+
+            </div>
+            <!--^^row -->
+
+        </div>
+        <!--^^ Embedd Friend Face & G-Maps Examples container -->
+
+    </section>
+    <!-- ^^ Embedd Friend Face & G-Maps Examples section -->
+
+    <!-- *************************************************************** -->
+    <!-- Form and Table Example -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="formNtable">
+
+        <div class="container-fluid">
+
+            <h2 class="text-center">Responsive Table and Form </h2>
+            <br>
+
+            <div class="row">
+
+                <!--col 1 -->
+                <div class="col-md-6">
+
+                    <h3>Responsive Table using
+                        <br>
+                        <code>&lt;table class="table table-responsive"&gt;</code></h3>
+                    <br>
+
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                    <!-- Responsive Table -->
+                    <table class="table table-responsive table-striped">
+                        <!-- Table Head -->
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <!-- Table Body -->
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+                </div>
+                <!-- ^^col 1 -->
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Horizontal Form Sub-Section  -->
+                <!--col 2 -->
+                <div class="col-md-6">
+
+                    <h3>Horizontal Form using
+                        <br>
+                        <code>&lt;form class="form-horizontal"&gt;</code></h3>
+                    <br>
+
+                    <!-- horizontal form  -->
+                    <form class="form-horizontal" role="form">
+
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                        <div class="form-group row">
+                            <label for="pwd" class="col-sm-2 col-form-label">Password:</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                        <div class="form-group row">
+                            <div class="offset-sm-2 col-sm-10">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                        <div class="form-group row">
+                            <div class="offset-sm-2 col-sm-10">
+                                <button type="button" class="btn btn-custom">Register</button>
+                            </div>
+                            <!-- ^^col -->
+                        </div>
+                        <!-- ^^form-group -->
+
+                    </form>
+                    <!-- ^^form -->
+                    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+                </div>
+                <!-- ^^col 2 -->
+
+            </div>
+            <!-- ^^row -->
+
+        </div>
+        <!-- ^^container -->
+
+    </section>
+    <!-- ^^section -->
+
+    <!-- *************************************************************** -->
+    <!-- Footer Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Footer -->
+
+    <section class="bg-footer">
+        <!-- fixed nav bar cluge -->
+        <br>
+        <div class="">
+
+            <p class="text-center text-light">
+                Responsive Examples v6.0 - Ithaca College COMP 105
+            </p>
+
+        </div>
+        <!--^^container -->
+        <br>
+
+    </section>
+    <!-- ^^ Footer Section -->
+
+    <!-- *************************************************************** -->
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/1ea7fef524.js" crossorigin="anonymous"></script>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Extensions JS -->
+    <script src="js/extensions.js"></script>
+    <!-- *************************************************************** -->
+
+</body></html>

@@ -1,0 +1,169 @@
+/*
+    gallery-examples.css
+
+    This is the page that will have all the CSS for our project site.
+*/
+
+/* ========================================================= */
+
+/*  IMPORTS for fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker');
+
+/* ========================================================= */
+
+/*  Page Level Style Rules */
+
+/* --------------------------------------------------------- */
+/* body styles */
+
+body {
+    font-family: 'Permanent Marker', cursive;    
+}
+
+.bg-image {
+    background: url('../images/bg-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    opacity: 1;
+}
+
+.bg-image {
+        background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(../images/bg-1.jpg) center no-repeat;
+        background-size: cover;
+}
+
+h3, h4, p {
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-white {
+    color:  #FFFFFA;
+}
+
+.text-blue {
+    color:  #3772FF;
+}
+
+.header-red {
+        background-color: #DF2935;
+        opacity: 1.0;
+        color: #FDFFFC;
+}
+
+.bg-red {
+        background-color: #FDFFFC;
+        opacity: 0.8;
+        color: #DF2935;
+}
+
+.bg-blue {
+        background-color: #FDFFFC;
+        opacity: 0.8;
+        color: #3772FF;
+}
+
+hr {
+    border-top: 10px solid #DF2935;
+}
+
+/* --------------------------------------------------------- */
+/* containers layout styles */
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+/* ========================================================= */
+
+
+/* Navbar Style  */
+
+.navbar {
+    margin-bottom: 0;
+    color: #FFFFFA !important;
+    background-color: #DF2935;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: 'Permanent Marker', cursive;    
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #FFFFFA !important;
+    background-color: #DF2935 !important;
+}
+
+.navbar-header .icon-bar {
+    background-color: #FFFFFA !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #DF2935 !important;
+    background-color: #FFFFFA !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn-custom {
+    color: #FFFFFA !important;
+    background-color: #DF2935 !important;
+    border-color: transparent;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FFFFFA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* --------------------------------------------------------- */
+
+
+/* social media hover colors */
+
+.social {
+    font-size: 1em;
+}
+
+.social .fa-facebook:hover {
+    color: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    color: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    color: #e64522;
+}
+
+.social .fa-linkedin:hover {
+    color: #0094BC;
+}
+
+/* --------------------------------------------------------- */
+
+/* Footer */
+
+.footer-custom {
+    background-color: #3772FF;
+    color: #FFFFFA;
+}
+
+.footer-glyphicon {
+    color: #FFFFFA;
+}
+
+
